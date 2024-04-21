@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>login authentication page</title>
+<style>
+    *{
+        margin:0;
+box-sizing: border-box;
+        
+    }
+    body{
+        background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZS_k3wgcWqwOo0kpP61uA79Je9kfKH4UpSg&s")no-repeat;
+        width:100%;
+       background-position:center;
+        background-size: cover;
+        
+        
+    }
+    .container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height:450px;
+
+
+    }
+    .form{
+        position:relative;
+        height:350px;
+        width:400px;
+        border:5px solid white;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        display:flex;
+backdrop-filter: blur(30px);
+
+    }
+    
+    .form h2{
+        color:white;
+        text-align: center;
+        font-size:32px;
+        text-transform: capitalize;
+       
+    }
+    .form .input-box{
+        border:2px solid white;
+        position:relative;
+        margin:20px 0px 20px 0px;
+        width:310px;
+
+
+    }
+    
+ 
+    .form .input-box input{
+        border:none;
+        width:100%;
+        height:30px;
+        background: transparent;
+        outline: none;
+        color:white;
+        padding:0 20px 0 5px;
+        font-size: 14px;
+
+    }
+    input::placeholder{
+        color:white;
+        text-transform: capitalize;
+
+    }
+    .form .input1{
+        border:2px solid white;
+        position:relative;
+        margin:20px 0px 20px 0px;
+        width:310px;
+
+
+    }
+    
+ 
+    .form .input1 input{
+        border:none;
+        width:100%;
+        height:30px;
+        background: transparent;
+        outline: none;
+        color:white;
+        padding:0 20px 0 5px;
+        font-size: 14px;
+
+    }
+ 
+    .btn{
+        border:2px solid white;
+        outline:none;
+        color:white;
+        width:100%;
+        height:35px;
+        font-size:18px;
+        background-color:purple;
+        margin:0px 0px 20px 0px;
+
+    }
+    .group{
+        display: flex;
+        justify-content: space-between;
+    }
+    .group span a{
+        color:white;
+        position: relative;
+        font-weight: 500;
+        top:15px;
+    }
+    
+    
+
+
+</style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form">
+                <form action=" "id="myform" name="form" >
+                    <h2>login</h2>
+
+                    <div class="input-box">
+                        
+                        <input type="email" id="email" name="email" placeholder="email" required/>
+                        <div class="error" id="emailErr"></div>
+
+                    </div>
+
+                    <div class="input1">
+                        <input  class="pass" type="password" id="password"  name="password" placeholder="password" required/>
+                        <div class="password" id="passwordErr"></div>
+
+                    </div>
+                    
+                   
+                    <div class="button">
+                       <input class="btn" type="submit" value="Login" onclick="validation()">
+                    </div>
+                    <div class="group">
+                        <span><a href="#">Forgot password?</a></span>
+                        <span><a href="#">Signup</a></span>
+
+                    </div>
+                </form>
+            </div>
+          
+        </div>
+        <script>
+                        function validation(){
+            var email=document.getElementById("email").value;
+            var password=document.getElementById("password").value;
+
+
+            if(email=="venkatalakshmidesireddy2002@gmail.com"&&password=="daddymummy"){
+                  
+                //window.location.assign("login and signup page.html");
+                alert("login successfully");
+            }
+            else if(email=="venkatalakshmidesireddy88@gmail.com"&&password=="broandme"){
+
+                
+//window.location.assign("login and signup page.html");
+alert("login successfully");                                                                                                                                                                                                                                                                                                            
+
+}
+            else{
+                alert("invalid information");
+               // return;
+            }
+            
+        
+        }
+       
+    
+    
+     
+        </script>
+    </body>
+</html>
